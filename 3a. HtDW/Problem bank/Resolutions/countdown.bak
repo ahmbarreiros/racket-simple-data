@@ -40,8 +40,8 @@
 ;; 
 (define (main c)
   (big-bang c                     ; Countdown
-    (on-tick   tock 1)       ; Countdown -> Countdown
-    (to-draw   render)))   ; Countdown -> Image
+            (on-tick   tock)       ; Countdown -> Countdown
+            (to-draw   render)))   ; Countdown -> Image
 
 ;; Countdown -> Countdown
 ;; produce the next number of the countdown
